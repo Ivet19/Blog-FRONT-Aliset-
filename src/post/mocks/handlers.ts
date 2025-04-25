@@ -13,7 +13,7 @@ export const handlers = [
     return HttpResponse.json<{ postsDtoData: PostsDtoData }>({
       postsDtoData: {
         posts: archivoDeLasTormentasComidaPostsDto,
-        postsTotal: 2,
+        postsTotal: archivoDeLasTormentasComidaPostsDto.length,
       },
     });
   }),
